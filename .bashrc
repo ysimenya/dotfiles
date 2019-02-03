@@ -110,6 +110,10 @@ if [ -f $HOME/.oh-my-git.git/prompt.sh ]; then
     source $HOME/.oh-my-git.git/prompt.sh
 fi
 
+```
+### Pipenv creating the virtualenv inside project’s directory
+export PIPENV_VENV_IN_PROJECT=1
+
 # Fortune
 if [ -x /usr/games/fortune ]; then
     fortune -a | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
