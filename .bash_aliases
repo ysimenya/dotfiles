@@ -53,8 +53,11 @@ alias la='ls -A'
 alias ll='ls -lrta'
 alias l='ls -lrt'
 
-alias grep='grep --color=auto'
 alias ccat='highlight --out-format=ansi'
+alias df='df -h'
+alias free="free -mht"
+alias grep='grep --color=auto'
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 alias md='mkdir -p -v'
 alias rd='rmdir -v'
