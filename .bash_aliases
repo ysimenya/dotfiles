@@ -37,6 +37,7 @@ alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
 alias shred='shred -n 100 -z -v -u'
+alias userlist="cut -d: -f1 /etc/passwd"
 
 #### REBOOT/SHUTDOWN ####
 alias reboot='sudo /sbin/reboot'
